@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>David Lorriman | Full Stack Web Developer</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link rel="icon" type="image/png" href="img/favicon.png">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/deb08f485c.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <!-- Header & Nav -->
+    <header id="header">
+        <div class="container">
+            <nav>
+                <a href="#header"><img src="img/dlorriman-logo.png" class="logo"></a>
+                <ul id="sidemenu">
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#work">Work</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <i class="fa-solid fa-xmark" onclick="closemenu()"></i>
+                </ul>
+                <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+            </nav>
+            <div class="header-text">
+                <p>Hi! I'm David Lorriman</p>
+                <h1>Full Stack<br>Web Developer</h1>
+            </div>
+        </div>
+    </header>
+    <!-- About Section -->
+    <section id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="img/dlorriman-about-me.png" alt="">
+                </div>
+                <div class="about-col-2">
+                    <h2 class="sub-title">About Me</h2>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quas modi, asperiores cupiditate tempore quia harum, autem aperiam praesentium et blanditiis eveniet sed atque officia maxime architecto labore voluptas deserunt iure.</p>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quas modi, asperiores cupiditate tempore quia harum, autem aperiam praesentium et blanditiis eveniet sed atque officia maxime architecto labore voluptas deserunt iure.</p>
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('skills', event)">Skills</p>
+                        <p class="tab-links" onclick="opentab('experience', event)">Experience</p>
+                        <p class="tab-links" onclick="opentab('education', event)">Education</p>
+                    </div>
+                    <div class="tab-content active-tab" id="skills">
+                        <ul>
+                            <li><span>UI/UX</span><br>Designing Web/App Interfaces</li>
+                            <li><span>Web Development</span><br>Front & Backend Dev</li>
+                            <li><span>App Development</span><br>Building for Andriod & iOS</li>
+                        </ul>
+                    </div>
+                    <div class="tab-content" id="experience">
+                        <ul>
+                            <li><span>2021 - Current</span><br>UI/UX Design Training at ET Institute</li>
+                            <li><span>2019 - 2021</span><br>Team lead at StarApp LLC</li>
+                            <li><span>2017 - 2019</span><br>UI/UX Design Executive at Coin Digital Ltd</li>
+                            <li><span>2016 - 2017</span><br>Internship at ekart eCommerce</li>
+                        </ul>
+                    </div>
+                    <div class="tab-content" id="education">
+                        <ul>
+                            <li><span>2016</span><br>UI/UX Design Training at ET Institute</li>
+                            <li><span>2016</span><br>MBA from MIT Bangalore</li>
+                            <li><span>2014</span><br>BBA from ISM Bangalore</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Services Section -->
+    <section id="services">
+        <div class="container">
+            <h2 class="sub-title">My Services</h2>
+            <div class="services-list">
+                <div>
+                    <i class="fa-solid fa-pen-ruler"></i>
+                    <h2>Web Design</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam nihil obcaecati neque et, eius facilis illum maxime.</p>
+                    <a href="#">Learn more...</a>
+                </div>
+                <div>
+                    <i class="fa-solid fa-code"></i>
+                    <h2>Web Development</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam nihil obcaecati neque et, eius facilis illum maxime.</p>
+                    <a href="#">Learn more...</a>
+                </div>
+                <div>
+                    <i class="fa-solid fa-handshake-simple"></i>
+                    <h2>Website Consulting</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam nihil obcaecati neque et, eius facilis illum maxime.</p>
+                    <a href="#">Learn more...</a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Work Section -->
+    <section id="work">
+        <div class="container">
+            <h2 class="sub-title">My Work</h2>
+            <div class="work-list">
+                <div class="work">
+                    <img src="img/work-1.png" alt="">
+                    <div class="layer">
+                        <h3>Project Name</h3>
+                        <p>A short description about the project.</p>
+                        <a href="#"><i class="fa-solid fa-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="img/work-2.png" alt="">
+                    <div class="layer">
+                        <h3>Project Name</h3>
+                        <p>A short description about the project.</p>
+                        <a href="#"><i class="fa-solid fa-up-right-from-square"></i></a>
+                    </div>
+
+                </div>
+                <div class="work">
+                    <img src="img/westend.png" alt="">
+                    <div class="layer">
+                        <h3>Westend House</h3>
+                        <p>Website for a luxury guesthouse. Built on Wordpress using the Astra Theme and Elementor Page Builder.</p>
+                        <a href="https://westendhouse.co.za/" target="_blank" rel="noopener noreferrer"><i class="fa-solid fa-up-right-from-square"></i></a>
+                    </div>
+                </div>
+            </div>
+            <a href="#" class="btn">See more</a>
+        </div>
+    </section>
+    <!-- Contact Section -->
+    <section id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="contact-left">
+                    <h2 class="sub-title">Contact Me</h2>
+                    <p><i class="fa-solid fa-paper-plane"></i><a href="mailto:dlorriman@pm.me">dlorriman@pm.me</a></p>
+                    <p></p>
+                    <p><i class="fa-solid fa-phone"></i>123 456 7890</p>
+                    <div class="social-icons">
+                        <a href="https://github.com/dlorriman" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-github"></i></a>
+                        <a href="https://www.linkedin.com/in/dlorriman/" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-linkedin"></i></a>
+                        <a href="https://twitter.com/d_lorriman" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-x-twitter"></i></a>
+                    </div>
+                    <a href="img/my-cv.pdf" target="_blank" rel="noopener noreferrer" class="btn">My Resume</a>
+                </div>
+                <div class="contact-right">
+                    <form>
+                        <input type="text" name="Name" placeholder="Your Name" required>
+                        <input type="email" name="email" placeholder="Your Email" required>
+                        <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                        <button type="submit" class="btn btn2">Send</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer>
+        <p id="copyright"></p>
+    </footer>
+
+
+<script src="main.js"></script>
+</body>
+</html>
