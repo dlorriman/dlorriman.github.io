@@ -27,7 +27,7 @@ body {
 header {
     /* width: 100%; */
     height: 100vh;
-    background-image: url(img/dlorriman-hero.png);
+    background-image: url(assets/dlorriman-hero.png);
     background-size: cover;
     background-position: center;
 }
@@ -393,7 +393,7 @@ nav .fa-solid {
 
 @media only screen and (max-width: 600px) {
     header {
-        background-image: url(img/dlorriman-phone.png);
+        background-image: url(assets/dlorriman-phone.png);
     }
 
     .header-text {
